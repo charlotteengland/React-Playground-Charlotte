@@ -4,7 +4,8 @@ class Bomb extends React.Component {
   constructor(props) {
   super(props)
   this.state = {
-    count: 0
+    count: 0,
+    sound: 0
   }
 }
 
@@ -21,12 +22,21 @@ class Bomb extends React.Component {
   }
 
   if (count % 2 === 0) {
-    
+    this.state.sound: tick
   }
+
+  else {this.state.sound: tock}
+
+  if (count === 8)  {
+    this.state.sound: BOOM!
+  }
+
+
+
 render() {
   return (
     <div>
-      <p>Tick or Tock</p>
+      <p>{sound}</p>
     </div>
   )
 }
